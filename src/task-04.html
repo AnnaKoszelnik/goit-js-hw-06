@@ -17,5 +17,22 @@
     </div>
 
     <script src="js/task-04.js" type="module"></script>
+    <script>
+      let counterValue = 0;
+    
+      const decrementButton = document.querySelector('[data-action="decrement"]');
+      const incrementButton = document.querySelector('[data-action="increment"]');
+      const valueSpan = document.getElementById('value');
+   
+      decrementButton.addEventListener('click', () => {
+        counterValue -= 1;
+        valueSpan.textContent = counterValue;
+      });
+    
+      incrementButton.addEventListener('click', () => {
+        counterValue += 1;
+        valueSpan.textContent = counterValue;
+      });
+    </script>
   </body>
 </html>
