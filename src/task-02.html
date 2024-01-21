@@ -22,22 +22,5 @@
     <ul id="ingredients"></ul>
 
     <script src="js/task-02.js" type="module"></script>
-    <script>
-      const ingredients = [
-        "Potatoes",
-        "Mushrooms",
-        "Garlic",
-        "Tomatoes",
-        "Herbs",
-        "Condiments",
-      ];
-      const ingredientsList = document.getElementById('ingredients');
-      ingredients.forEach(ingredient => {
-        const listItem = document.createElement('li');
-        listItem.textContent = ingredient;
-        listItem.classList.add('item');
-        ingredientsList.appendChild(listItem);
-      });
-    </script>
   </body>
 </html>
